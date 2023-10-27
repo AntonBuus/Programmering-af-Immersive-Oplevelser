@@ -12,18 +12,18 @@ public class SkydSkyd : MonoBehaviour
 
     void Start(){
         XRGrabInteractable theGunGrabable = GetComponent<XRGrabInteractable>();
-        theGunGrabable.activated.AddListener(shootyshoot);
+        theGunGrabable.activated.AddListener(Shootyshoot);
     }
 
     void Update(){
         
     }
 
-    public void shootyshoot(ActivateEventArgs args)
+    public void Shootyshoot(ActivateEventArgs args)
     {
         GameObject newBullet = Instantiate(bullet);
-        newBullet.Transform.position = spawnPosition.position;
-        newBullet.Getcomponent<Rigidbody>().velocity = spawnPosition.forward * bulletSpeed;
+        newBullet.transform.position = spawnPosition.position;
+        newBullet.GetComponent<Rigidbody>().velocity = spawnPosition.forward * bulletSpeed;
     
         Destroy(newBullet, 10);
     }
