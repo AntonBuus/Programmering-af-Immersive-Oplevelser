@@ -11,9 +11,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Anton/Scenes/Assignments/Locomotion.unity
     guid: 44432b0ed540d044fbe19299658dc132
-  - enabled: 1
+  - enabled: 0
     path: Assets/Anton/Scenes/Assignments/GrabInteraction.unity
     guid: 569e70c4ab88cdb4182b4038fd165cb1
+  - enabled: 1
+    path: Assets/Anton/Scenes/Snap interaction.unity
+    guid: 3e315560a2295634f9dd90af5482751e
+  - enabled: 0
+    path: Assets/Anton/Scenes/Lejlighed.unity
+    guid: 377a589690a4a2c4ba0fb758cc582288
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b414272b014654e46a6b0536ee4c42de,
       type: 2}
