@@ -7,13 +7,16 @@ public class AttatchGlasses : MonoBehaviour
     public GameObject targetObject; // The object to attach to
     public string attachTag = "Attachable"; // Tag of objects that can be attached
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
+        
         if (collision.gameObject.CompareTag(attachTag))
         {
             AttachObjectToTarget();
+            Debug.Log("Collision detected");
         }
     }
+    
 
     private void AttachObjectToTarget()
     {
