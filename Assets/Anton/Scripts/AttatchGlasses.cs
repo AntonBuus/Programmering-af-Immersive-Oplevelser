@@ -9,7 +9,7 @@ public class AttatchGlasses : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        
+        Debug.Log("Collision without tag detected");
         if (collision.gameObject.CompareTag(attachTag))
         {
             AttachObjectToTarget();

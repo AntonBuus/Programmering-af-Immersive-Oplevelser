@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Attachable
+  - Goggle
   layers:
   - Default
   - TransparentFX
