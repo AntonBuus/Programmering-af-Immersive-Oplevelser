@@ -50,6 +50,7 @@ public class SoundManager : MonoBehaviour
     /// playEffect instantiates an object that contains the audio sorce.
     /// the correct sound is found thourgh and array and is played.
     /// This also adds the audio toggle and the mixer to each element.
+    ///SoundManager.instance.playEffect(gameObject, "_clipName");
     /// </summary>
     public void playEffect(GameObject target, string soundName)
     {
