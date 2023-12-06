@@ -8902,6 +8902,11 @@ PrefabInstance:
       propertyPath: soundsArray.Array.data[0].spatialBlend
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1564823543310876251, guid: 14e991e21e600a040b06d3a141a08456,
+        type: 3}
+      propertyPath: soundsArray.Array.data[5].spatialBlend
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1567692070034005887, guid: 14e991e21e600a040b06d3a141a08456,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14415,6 +14420,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1894113620}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: WaterPour
           m_BoolArgument: 0
         m_CallState: 2
   m_LastSelectExited:
@@ -37031,6 +37048,8 @@ GameObject:
   - component: {fileID: 1416018960}
   - component: {fileID: 1416018958}
   - component: {fileID: 1416018962}
+  - component: {fileID: 1416018966}
+  - component: {fileID: 1416018964}
   m_Layer: 0
   m_Name: polySurface1463
   m_TagString: Untagged
@@ -38193,6 +38212,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1416018973}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1416018964
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415651373}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 28.33, y: 1.5, z: 18.369963}
+  m_Center: {x: 35.6, y: -5.9, z: 0.00000047683713}
 --- !u!4 &1416018965
 Transform:
   m_ObjectHideFlags: 0
@@ -38208,6 +38248,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1416018961}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1416018966
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415651373}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.97, y: 6.74, z: 18.369963}
+  m_Center: {x: 8.04, y: -8.05, z: 0.00000047683713}
 --- !u!4 &1416018967
 Transform:
   m_ObjectHideFlags: 0
@@ -45632,6 +45693,18 @@ Transform:
   - {fileID: 1851710408}
   m_Father: {fileID: 1654331683}
   m_LocalEulerAnglesHint: {x: 0, y: 60.000004, z: 0}
+--- !u!114 &1894113620 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1564823543310876251, guid: 14e991e21e600a040b06d3a141a08456,
+    type: 3}
+  m_PrefabInstance: {fileID: 225796881}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62cb2da377ecda244b9a5ade02df6ab0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1895379877
 Transform:
   m_ObjectHideFlags: 0
