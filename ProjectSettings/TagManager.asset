@@ -7,6 +7,9 @@ TagManager:
   - Attachable
   - Goggle
   - Gryde
+  - Beef
+  - Carrot
+  - Tomato
   layers:
   - Default
   - TransparentFX
