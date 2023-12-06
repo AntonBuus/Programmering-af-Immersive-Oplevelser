@@ -26,9 +26,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Anton/Scenes/Kitchen.unity
     guid: 956edfae05906fb469a2348d4504bbd1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Malthe/Scenes/AntonScene.unity
     guid: 412f1765f171346419a801a4d192caf0
+  - enabled: 1
+    path: Assets/Malthe/Scenes/TestScene2.unity
+    guid: 59dbe2c1f3143a9488a77b0fb60bca3e
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b414272b014654e46a6b0536ee4c42de,
       type: 2}
