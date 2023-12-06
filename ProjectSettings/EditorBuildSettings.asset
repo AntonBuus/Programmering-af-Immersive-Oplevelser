@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Anton/Scenes/Lejlighed.unity
     guid: 377a589690a4a2c4ba0fb758cc582288
   - enabled: 0
-    path: Assets/Anton/Scenes/IntroScene.unity
+    path: Assets/Anton/Scenes/Gammeltestscene.unity
     guid: 8ce040ae7c5762f4b9b112c4385cc47d
   - enabled: 0
     path: Assets/Anton/Scenes/Kitchen.unity
