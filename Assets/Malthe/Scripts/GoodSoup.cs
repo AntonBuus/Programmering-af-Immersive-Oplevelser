@@ -33,16 +33,29 @@ public class GoodSoup : MonoBehaviour
         isSteakin=true;
     }
 
-    public void SwitchtoSoup()
+    /*public void SwitchtoSoup()
     {
         if (HaveSpawned == false && IsTomatoin == true && isCarrotin == true && isSteakin == true)
         {
+            HaveSpawned = true;
             Invoke("SwitchObjects", 3f);
         }
 
 
 
-    }    // Update is called once per frame
+    } 
+    */
+    
+    void FixedUpdate()
+    {
+        if (HaveSpawned == false && IsTomatoin == true && isCarrotin == true && isSteakin == true)
+        {
+            HaveSpawned = true;
+            Invoke("SwitchObjects", 3f);
+        }
+    }
+    
+    // Update is called once per frame
     void SwitchObjects()
     {
         // Destroy the first prefab

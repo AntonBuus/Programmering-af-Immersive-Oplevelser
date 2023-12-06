@@ -8,6 +8,7 @@ public class SnapGrydeSkift : MonoBehaviour
     public GameObject prefab2;
 
     public bool Waterisrunning = false;
+    public bool IsPlaced = false;
     public bool HaveSpawned = false;
 
     void Start()
@@ -23,15 +24,22 @@ public class SnapGrydeSkift : MonoBehaviour
         Waterisrunning = true;
     }
 
-    public void SwitchtoWater()
+    public void PlacingThing()
     {
-        if (HaveSpawned == false && Waterisrunning == true)
-        {
-            Invoke("SwitchObjects", 3f);
-        }
+        IsPlaced = true;
 
 
         
+    }
+
+    void FixedUpdate()
+    {
+        if (HaveSpawned == false && Waterisrunning == true && IsPlaced == true)
+        {
+            HaveSpawned = true;
+            Invoke("SwitchObjects", 3f);
+        }
+
     }
 
 
@@ -42,6 +50,6 @@ public class SnapGrydeSkift : MonoBehaviour
 
         // Instantiate the second prefab
         Instantiate(prefab2, transform.position, transform.rotation);
-        HaveSpawned = true;
+        
     }
 }

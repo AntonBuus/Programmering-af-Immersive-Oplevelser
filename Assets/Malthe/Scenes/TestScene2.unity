@@ -1045,7 +1045,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 15770805}
         m_TargetAssemblyTypeName: SnapGrydeSkift, Assembly-CSharp
-        m_MethodName: SwitchtoWater
+        m_MethodName: PlacingThing
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1126,6 +1126,7 @@ MonoBehaviour:
   prefab1: {fileID: 1065676035}
   prefab2: {fileID: 667778004}
   Waterisrunning: 0
+  IsPlaced: 0
   HaveSpawned: 0
 --- !u!23 &15955586
 MeshRenderer:
@@ -16942,7 +16943,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4297064017948486, guid: d15472a0ad9a62e49a54ad28cabd11cb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.4
+      value: 13.152
       objectReference: {fileID: 0}
     - target: {fileID: 4297064017948486, guid: d15472a0ad9a62e49a54ad28cabd11cb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -16950,7 +16951,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4297064017948486, guid: d15472a0ad9a62e49a54ad28cabd11cb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.954
+      value: -4.336
       objectReference: {fileID: 0}
     - target: {fileID: 4297064017948486, guid: d15472a0ad9a62e49a54ad28cabd11cb, type: 3}
       propertyPath: m_LocalRotation.w
