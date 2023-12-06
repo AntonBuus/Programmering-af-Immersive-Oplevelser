@@ -5,7 +5,7 @@ using UnityEngine;
 public class GoodSoup : MonoBehaviour
 {
 
-    public GameObject prefab1;
+    //public GameObject prefab1;
     public GameObject prefab2;
 
     public bool HaveSpawned = false;
@@ -46,9 +46,10 @@ public class GoodSoup : MonoBehaviour
     void SwitchObjects()
     {
         // Destroy the first prefab
-        Destroy(prefab1);
+        //Destroy(prefab1);
 
         // Instantiate the second prefab
+        Debug.Log("Im trying to spawn");
         Instantiate(prefab2, transform.position, transform.rotation);
         HaveSpawned = true;
     }

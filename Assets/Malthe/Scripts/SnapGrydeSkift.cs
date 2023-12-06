@@ -7,7 +7,7 @@ public class SnapGrydeSkift : MonoBehaviour
     public GameObject prefab1;
     public GameObject prefab2;
 
-
+    public bool Waterisrunning = false;
     public bool HaveSpawned = false;
 
     void Start()
@@ -18,9 +18,14 @@ public class SnapGrydeSkift : MonoBehaviour
        
     }
 
+    public void SetWater()
+    {
+        Waterisrunning = true;
+    }
+
     public void SwitchtoWater()
     {
-        if (HaveSpawned == false)
+        if (HaveSpawned == false && Waterisrunning == true)
         {
             Invoke("SwitchObjects", 3f);
         }
