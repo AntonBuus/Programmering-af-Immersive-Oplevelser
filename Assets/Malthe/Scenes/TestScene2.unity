@@ -2318,6 +2318,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distance: 0.1
+  clipName: FridgeOpen
+  _delay: 3
 --- !u!23 &105745369
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8890,12 +8892,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1564823543310876251, guid: 14e991e21e600a040b06d3a141a08456,
         type: 3}
+      propertyPath: soundsArray.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1564823543310876251, guid: 14e991e21e600a040b06d3a141a08456,
+        type: 3}
       propertyPath: soundsArray.Array.data[0].loop
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1564823543310876251, guid: 14e991e21e600a040b06d3a141a08456,
         type: 3}
+      propertyPath: soundsArray.Array.data[8].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fa6f21766b9cca04aa9fa7c19f6032e1, type: 3}
+    - target: {fileID: 1564823543310876251, guid: 14e991e21e600a040b06d3a141a08456,
+        type: 3}
+      propertyPath: soundsArray.Array.data[8].name
+      value: DrawrOpen
+      objectReference: {fileID: 0}
+    - target: {fileID: 1564823543310876251, guid: 14e991e21e600a040b06d3a141a08456,
+        type: 3}
+      propertyPath: soundsArray.Array.data[8].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1564823543310876251, guid: 14e991e21e600a040b06d3a141a08456,
+        type: 3}
       propertyPath: soundsArray.Array.data[0].volume
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1564823543310876251, guid: 14e991e21e600a040b06d3a141a08456,
+        type: 3}
+      propertyPath: soundsArray.Array.data[8].volume
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1564823543310876251, guid: 14e991e21e600a040b06d3a141a08456,
@@ -8907,6 +8934,11 @@ PrefabInstance:
         type: 3}
       propertyPath: soundsArray.Array.data[5].spatialBlend
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1564823543310876251, guid: 14e991e21e600a040b06d3a141a08456,
+        type: 3}
+      propertyPath: soundsArray.Array.data[8].spatialBlend
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1567692070034005887, guid: 14e991e21e600a040b06d3a141a08456,
         type: 3}
@@ -36974,6 +37006,7 @@ GameObject:
   - component: {fileID: 1414724639}
   - component: {fileID: 1413726175}
   - component: {fileID: 1416019450}
+  - component: {fileID: 1416019452}
   m_Layer: 0
   m_Name: polySurface1380
   m_TagString: Untagged
@@ -39710,6 +39743,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1416019453}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1416019452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415651353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b0dca5fc0a6e164da0cdb00b62ad4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 0.1
+  clipName: DrawrOpen
+  _delay: 3
 --- !u!4 &1416019453
 Transform:
   m_ObjectHideFlags: 0
