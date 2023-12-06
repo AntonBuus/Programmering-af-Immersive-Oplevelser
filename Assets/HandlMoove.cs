@@ -4,20 +4,6 @@ using UnityEngine;
 
 public class HandlMoove : MonoBehaviour
 {
-    //private bool hasMoved = false;
-
-    //void OnTriggerEnter(Collision collision)
-    //{
-    // Check if the collision involves movement
-    //  if (collision.relativeVelocity.magnitude > 0.1f && !hasMoved)
-    // {
-    // Play the sound
-    //   FindObjectOfType<AudioManager>().PlayVoice("FridgeOpen");
-    //   Debug.LogWarning("Audio is playing");
-    //   // Prevent multiple plays during continuous collision
-    //}
-    //}
-
     private Vector3 lastPosition;
     private bool hasMoved = false;
     public float distance = 0.1f;
@@ -35,8 +21,8 @@ public class HandlMoove : MonoBehaviour
 
     void _hasMoved()
     {
-        // Check if the position has changed
-        if (transform.position.magnitude > distance && !hasMoved)
+        // Check if the position has changed and if it has moved a certain distance
+        if (Vector3.Distance(transform.position, lastPosition) > distance && !hasMoved)
         {
             // Play the sound
             FindObjectOfType<AudioManager>().Play("FridgeOpen");
