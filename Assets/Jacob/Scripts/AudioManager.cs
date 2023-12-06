@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-	public Sound[] sounds;
+    //Creats the sound array
+    public Sound[] soundsArray;
+    public Voice[] voiceArray;
+
 
     //Singleton pattern
     public static AudioManager instance;
 
-    void Awake ()
-	{
-		//Singleton pattern
+    void Awake()
+    {
+        //Singleton pattern
         if (instance == null)
         {
             instance = this;
@@ -20,34 +23,53 @@ public class AudioManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
-			return;
+            return;
         }
 
-        foreach (Sound s in sounds)
-		{
-			s.source = gameObject.AddComponent<AudioSource>();
-			s.source.clip = s.clip;
+        foreach (Sound s in soundsArray)
+        {
+            s.source = gameObject.AddComponent<AudioSource>();
+            s.source.clip = s.clip;
 
-			s.source.volume = s.volume;
-			s.source.pitch = s.pitch;
+            s.source.volume = s.volume;
+            s.source.pitch = s.pitch;
             s.source.loop = s.loop;
-			s.source.spatialBlend = s.spatialBlend;
+            s.source.spatialBlend = s.spatialBlend;
         }
-	}
 
+        foreach (Voice v in voiceArray)
+        {
+            v.source = gameObject.AddComponent<AudioSource>();
+            v.source.clip = v.clip;
 
-	//To call:
-	//FindObjectOfType<AudioManager>().Play("clip_name");
-	//
-	public void Play (string name)
-	{
-		Sound s = Array.Find(sounds, sounds => sounds.name == name);
+            v.source.volume = v.volume;
+        }
+    }
 
-		if (s == null)
-		{
-			Debug.LogWarning("Sound: " + name + " not found");
-			return;
-		}
-		s.source.Play();
-	}
+    //To call:
+    //FindObjectOfType<AudioManager>().Play("clip_name");
+    //
+    public void Play(string name)
+    {
+        Sound s = Array.Find(soundsArray, soundsArray => soundsArray.name == name);
+
+        if (s == null)
+        {
+            Debug.LogWarning(name + " kinda cringe, check spelling you dylexic ass");
+            return;
+        }
+        s.source.Play();
+    }
+
+    public void PlayVoice(string name)
+    {
+        Voice v = Array.Find(voiceArray, voiceArray => voiceArray.name == name);
+
+        if (v == null)
+        {
+            Debug.LogWarning("Voice " + name + " kinda cringe, check spelling you dylexic ass");
+            return;
+        }
+        v.source.Play();
+    }
 }
