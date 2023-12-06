@@ -61,6 +61,8 @@ public class AudioManager : MonoBehaviour
         s.source.Play();
     }
 
+
+    //FindObjectOfType<AudioManager>().PlayVoice("clip_name");
     public void PlayVoice(string name)
     {
         Voice v = Array.Find(voiceArray, voiceArray => voiceArray.name == name);
