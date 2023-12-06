@@ -10,6 +10,7 @@ TagManager:
   - Beef
   - Carrot
   - Tomato
+  - GrydeSoup
   layers:
   - Default
   - TransparentFX
