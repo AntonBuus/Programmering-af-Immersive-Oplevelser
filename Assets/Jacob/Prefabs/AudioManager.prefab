@@ -44,11 +44,61 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62cb2da377ecda244b9a5ade02df6ab0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds:
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
-    spatialBlend: 0
+  soundsArray:
+  - name: FridgeOpen
+    clip: {fileID: 8300000, guid: 80e853a16db530840ab121aa51d7740f, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 1
     loop: 0
     source: {fileID: 0}
+  - name: FridgeClose
+    clip: {fileID: 8300000, guid: 61120307f13795749b9803c6b5105c3c, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BoilingWater
+    clip: {fileID: 8300000, guid: 6d3b491837176f8418264f58edcdfa87, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: inductionBip
+    clip: {fileID: 8300000, guid: a91bf80d3b064464cb2f66fbe69432e2, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: LightSwitch
+    clip: {fileID: 8300000, guid: f599ea354e9ccbf44bf4c80968d2834f, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: WaterPour
+    clip: {fileID: 8300000, guid: b99d61369fc007b47803596a7e2005a6, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: WaterSplash
+    clip: {fileID: 8300000, guid: 9ebb742bb11a6724d93996d16f37c6e9, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Click
+    clip: {fileID: 8300000, guid: 2657be334cfa60e4a8aebeacebe83e1f, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 1
+    loop: 0
+    source: {fileID: 0}
+  voiceArray: []
