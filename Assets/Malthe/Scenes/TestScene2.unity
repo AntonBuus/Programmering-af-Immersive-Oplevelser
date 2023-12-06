@@ -2310,7 +2310,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 105666610}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b0dca5fc0a6e164da0cdb00b62ad4da, type: 3}
   m_Name: 
@@ -8894,7 +8894,12 @@ PrefabInstance:
     - target: {fileID: 1564823543310876251, guid: 14e991e21e600a040b06d3a141a08456,
         type: 3}
       propertyPath: soundsArray.Array.data[0].volume
-      value: 1
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1564823543310876251, guid: 14e991e21e600a040b06d3a141a08456,
+        type: 3}
+      propertyPath: soundsArray.Array.data[0].spatialBlend
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1567692070034005887, guid: 14e991e21e600a040b06d3a141a08456,
         type: 3}
@@ -15578,7 +15583,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.31442308, y: 1.3628631, z: 0.49483615}
+  m_ConnectedAnchor: {x: -4.22116, y: 1.3628631, z: 11.296333}
   serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -18729,7 +18734,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.50000024, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.5003397, y: 1.02872, z: 0.53755355}
+  m_ConnectedAnchor: {x: -4.4013395, y: 1.02872, z: 11.287554}
   serializedVersion: 2
   m_UseSpring: 1
   m_Spring:
@@ -32771,10 +32776,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1613698678}
-    - targetCorrespondingSourceObject: {fileID: 4899776416375190839, guid: 7b5ec1159cb969d4a8fe69fddc2f17d8,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1613698677}
   m_SourcePrefab: {fileID: 100100000, guid: 7b5ec1159cb969d4a8fe69fddc2f17d8, type: 3}
 --- !u!4 &1400533945 stripped
 Transform:
@@ -41770,7 +41771,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0.46, z: 0}
   m_Axis: {x: 1, y: 105.9, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.13487503, y: 1.5046304, z: 0.5930583}
+  m_ConnectedAnchor: {x: 7.1110044, y: 2.6879716, z: 0.5224905}
   serializedVersion: 2
   m_UseSpring: 0
   m_Spring:
@@ -41797,19 +41798,6 @@ HingeJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!114 &1613698677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1613698668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b0dca5fc0a6e164da0cdb00b62ad4da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 8
 --- !u!65 &1613698678
 BoxCollider:
   m_ObjectHideFlags: 0
