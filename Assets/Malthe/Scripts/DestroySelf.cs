@@ -9,7 +9,7 @@ public class DestroySelf : MonoBehaviour
     public void Destroysself()
     {
         if (Soup.IsTomatoin == true && Soup.isCarrotin == true && Soup.isSteakin == true)
-            Invoke("Destroy", 3.1f);
+            Invoke("Destroy", 3.01f);
 
     }
 
