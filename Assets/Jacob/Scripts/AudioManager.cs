@@ -74,4 +74,23 @@ public class AudioManager : MonoBehaviour
         }
         v.source.Play();
     }
+
+    public void DisableAllAudioSources()
+    {
+        foreach (Sound s in soundsArray)
+        {
+            if (s.source.isPlaying)
+            {
+                s.source.Stop();
+            }
+        }
+
+        foreach (Voice v in voiceArray)
+        {
+            if (v.source.isPlaying)
+            {
+                v.source.Stop();
+            }
+        }
+    }
 }
