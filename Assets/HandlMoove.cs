@@ -4,16 +4,45 @@ using UnityEngine;
 
 public class HandlMoove : MonoBehaviour
 {
-    private bool hasMoved = false;
+    //private bool hasMoved = false;
 
-    void OnCollisionEnter(Collision collision)
+    //void OnTriggerEnter(Collision collision)
+    //{
+    // Check if the collision involves movement
+    //  if (collision.relativeVelocity.magnitude > 0.1f && !hasMoved)
+    // {
+    // Play the sound
+    //   FindObjectOfType<AudioManager>().PlayVoice("FridgeOpen");
+    //   Debug.LogWarning("Audio is playing");
+    //   // Prevent multiple plays during continuous collision
+    //}
+    //}
+
+    private Vector3 lastPosition;
+    private bool hasMoved = false;
+    public float distance = 0.1f;
+
+    void Start()
     {
-        // Check if the collision involves movement
-        if (collision.relativeVelocity.magnitude > 0.1f && !hasMoved)
+        // Initialize the last position
+        lastPosition = transform.position;
+    }
+
+    void LateUpdate()
+    {
+        _hasMoved();
+    }
+
+    void _hasMoved()
+    {
+        // Check if the position has changed
+        if (transform.position.magnitude > distance && !hasMoved)
         {
             // Play the sound
-            FindObjectOfType<AudioManager>().PlayVoice("FridgeOpen");
-            hasMoved = true; // Prevent multiple plays during continuous collision
+            FindObjectOfType<AudioManager>().Play("FridgeOpen");
+            Debug.LogWarning("Audio is playing");
+            lastPosition = transform.position; // Update the last position
+            hasMoved = true;
         }
     }
 }
