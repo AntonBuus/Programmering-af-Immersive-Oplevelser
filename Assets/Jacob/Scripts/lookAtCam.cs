@@ -8,6 +8,6 @@ public class lookAtCam : MonoBehaviour
 	[SerializeField] private Transform cam_;
 
 	void LateUpdate() {
-		transform.LookAt(transform.position + cam_.rotation * Vector3.forward, cam_.rotation * Vector3.up);
+		transform.LookAt(transform.position + cam_.rotation * Vector3.forward);
 	}
 }
