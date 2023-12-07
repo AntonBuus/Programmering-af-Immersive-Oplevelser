@@ -21,8 +21,9 @@ public class SpawnCups : MonoBehaviour
         if (spawnPositionReference != null && CupsHaveSpawned == false)
             {
             Vector3 spawnPosition = spawnPositionReference.transform.position;
+            Quaternion spawnRotation = spawnPositionReference.transform.rotation;
 
-            Instantiate(prefabToSpawn, spawnPosition, Quaternion.identity);
+            Instantiate(prefabToSpawn, spawnPosition, spawnRotation);
             CupsHaveSpawned = true;
         }
             else
