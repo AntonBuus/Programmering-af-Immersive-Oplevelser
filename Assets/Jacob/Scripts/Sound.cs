@@ -10,12 +10,12 @@ public class Sound
 	public AudioClip clip;
 
 	[Range(0f, 10f)]
-	public float volume;
+	public float volume = 1f;
 	[Range(0.1f, 3f)]
-	public float pitch;
+	public float pitch = 1f;
 
 	[Range(0f, 1)]
-	public float spatialBlend;
+	public float spatialBlend = 1f;
 
 
     public bool loop;

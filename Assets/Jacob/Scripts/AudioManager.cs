@@ -46,6 +46,12 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    void Start()
+    {
+        Play("Theme");
+        //Debug.Log("Start is working");
+    }
+
     //To call:
     //FindObjectOfType<AudioManager>().Play("clip_name");
     //
@@ -75,17 +81,22 @@ public class AudioManager : MonoBehaviour
         v.source.Play();
     }
 
-    public void DisableAllAudioSources()
+    public void DisableAudioSource(string audioSourceName)
     {
-        foreach (Sound s in soundsArray)
+        // Find the sound with the specified name
+        Sound s = Array.Find(soundsArray, sound => sound.name == audioSourceName);
+
+        // Find the voice with the specified name
+        Voice v = Array.Find(voiceArray, voice => voice.name == audioSourceName);
+
+        if (s != null)
         {
             if (s.source.isPlaying)
             {
                 s.source.Stop();
             }
         }
-
-        foreach (Voice v in voiceArray)
+        else if (v != null)
         {
             if (v.source.isPlaying)
             {
