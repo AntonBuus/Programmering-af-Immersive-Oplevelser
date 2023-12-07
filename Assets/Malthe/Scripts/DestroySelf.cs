@@ -6,13 +6,19 @@ public class DestroySelf : MonoBehaviour
 {
     public GoodSoup Soup;
 
-    public void Destroysself()
+    /*public void Destroysself()
     {
         if (Soup.IsTomatoin == true && Soup.isCarrotin == true && Soup.isSteakin == true)
-            Invoke("Destroy", 3.01f);
+            Invoke("Destroy", 3.0f);
 
     }
+    */
 
+    public void FixedUpdate()
+    {
+        if(Soup.IsTomatoin == true && Soup.isCarrotin == true && Soup.isSteakin == true)
+            Invoke("Destroy", 3.0f);
+    }
     
     void Destroy()
     {

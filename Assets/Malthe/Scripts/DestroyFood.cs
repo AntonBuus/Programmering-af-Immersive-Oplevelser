@@ -14,6 +14,13 @@ public class DestroyFood : MonoBehaviour
         
     }
 
+
+    public void FixedUpdate()
+    {
+        if (Soup.IsTomatoin == true && Soup.isCarrotin == true && Soup.isSteakin == true)
+            Invoke("destroyobject", 3.0f);
+    }
+
     void destroyobject()
     {
         Destroy(gameObject);
