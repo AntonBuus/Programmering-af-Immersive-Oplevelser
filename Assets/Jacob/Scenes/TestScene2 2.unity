@@ -1055,6 +1055,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1894113620}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Click
+          m_BoolArgument: 0
+        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
       m_Calls: []
@@ -2211,7 +2223,6 @@ GameObject:
   - component: {fileID: 105666614}
   - component: {fileID: 105666613}
   - component: {fileID: 105666612}
-  - component: {fileID: 105666615}
   m_Layer: 0
   m_Name: Handle
   m_TagString: Untagged
@@ -2305,21 +2316,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 105666610}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &105666615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 105666610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b0dca5fc0a6e164da0cdb00b62ad4da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 0.1
-  clipName: FridgeOpen
-  _delay: 3
 --- !u!23 &105745369
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15218,17 +15214,17 @@ PrefabInstance:
     - target: {fileID: 1291743089180749403, guid: 5fecca7fcae2d06439e097fb18e80a25,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.869
+      value: 8.359
       objectReference: {fileID: 0}
     - target: {fileID: 1291743089180749403, guid: 5fecca7fcae2d06439e097fb18e80a25,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.533
+      value: 2.394
       objectReference: {fileID: 0}
     - target: {fileID: 1291743089180749403, guid: 5fecca7fcae2d06439e097fb18e80a25,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.988
+      value: -2.074
       objectReference: {fileID: 0}
     - target: {fileID: 1291743089180749403, guid: 5fecca7fcae2d06439e097fb18e80a25,
         type: 3}
@@ -32784,6 +32780,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1613698678}
+    - targetCorrespondingSourceObject: {fileID: 4899776416375190839, guid: 7b5ec1159cb969d4a8fe69fddc2f17d8,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1613698681}
   m_SourcePrefab: {fileID: 100100000, guid: 7b5ec1159cb969d4a8fe69fddc2f17d8, type: 3}
 --- !u!4 &1400533945 stripped
 Transform:
@@ -37145,7 +37145,6 @@ GameObject:
   - component: {fileID: 1414724639}
   - component: {fileID: 1413726175}
   - component: {fileID: 1416019450}
-  - component: {fileID: 1416019452}
   m_Layer: 0
   m_Name: polySurface1380
   m_TagString: Untagged
@@ -38069,6 +38068,7 @@ GameObject:
   - component: {fileID: 1416019406}
   - component: {fileID: 1416019416}
   - component: {fileID: 1416019414}
+  - component: {fileID: 1416019418}
   m_Layer: 0
   m_Name: TestSkuffe
   m_TagString: Untagged
@@ -39594,6 +39594,22 @@ Transform:
   - {fileID: 1416019407}
   m_Father: {fileID: 1416019331}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1416019418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415651819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b0dca5fc0a6e164da0cdb00b62ad4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 0.1
+  clipName: DrawrOpen
+  _delay: 3
+  returnSpeed: 1
 --- !u!4 &1416019419
 Transform:
   m_ObjectHideFlags: 0
@@ -39882,21 +39898,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1416019453}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1416019452
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1415651353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b0dca5fc0a6e164da0cdb00b62ad4da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 0.1
-  clipName: DrawrOpen
-  _delay: 3
 --- !u!4 &1416019453
 Transform:
   m_ObjectHideFlags: 0
@@ -41903,6 +41904,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.5071688, y: 1.0649234, z: 0.08566457}
   m_Center: {x: 0.25358406, y: 0.5324617, z: 0.04131993}
+--- !u!114 &1613698681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613698668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b0dca5fc0a6e164da0cdb00b62ad4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 0.1
+  clipName: FridgeOpen
+  _delay: 3
+  returnSpeed: 1
 --- !u!1 &1624786786
 GameObject:
   m_ObjectHideFlags: 0
@@ -42084,6 +42101,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1894113620}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Click
           m_BoolArgument: 0
         m_CallState: 2
   m_SelectExited:

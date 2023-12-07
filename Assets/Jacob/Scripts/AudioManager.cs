@@ -103,9 +103,5 @@ public class AudioManager : MonoBehaviour
                 v.source.Stop();
             }
         }
-        else
-        {
-            Debug.LogWarning(audioSourceName + " not found. Check spelling or add the sound to the AudioManager.");
-        }
     }
 }
