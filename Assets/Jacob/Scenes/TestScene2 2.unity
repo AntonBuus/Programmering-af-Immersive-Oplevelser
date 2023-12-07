@@ -2223,6 +2223,7 @@ GameObject:
   - component: {fileID: 105666614}
   - component: {fileID: 105666613}
   - component: {fileID: 105666612}
+  - component: {fileID: 105666615}
   m_Layer: 0
   m_Name: Handle
   m_TagString: Untagged
@@ -2316,6 +2317,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 105666610}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &105666615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105666610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b0dca5fc0a6e164da0cdb00b62ad4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 0.1
+  clipName: FridgeOpen
+  _delay: 3
+  retracctSpeed: 1
 --- !u!23 &105745369
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32780,10 +32797,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1613698678}
-    - targetCorrespondingSourceObject: {fileID: 4899776416375190839, guid: 7b5ec1159cb969d4a8fe69fddc2f17d8,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1613698681}
   m_SourcePrefab: {fileID: 100100000, guid: 7b5ec1159cb969d4a8fe69fddc2f17d8, type: 3}
 --- !u!4 &1400533945 stripped
 Transform:
@@ -39609,7 +39622,7 @@ MonoBehaviour:
   distance: 0.1
   clipName: DrawrOpen
   _delay: 3
-  returnSpeed: 1
+  retracctSpeed: 1
 --- !u!4 &1416019419
 Transform:
   m_ObjectHideFlags: 0
@@ -41904,22 +41917,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.5071688, y: 1.0649234, z: 0.08566457}
   m_Center: {x: 0.25358406, y: 0.5324617, z: 0.04131993}
---- !u!114 &1613698681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1613698668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b0dca5fc0a6e164da0cdb00b62ad4da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 0.1
-  clipName: FridgeOpen
-  _delay: 3
-  returnSpeed: 1
 --- !u!1 &1624786786
 GameObject:
   m_ObjectHideFlags: 0
