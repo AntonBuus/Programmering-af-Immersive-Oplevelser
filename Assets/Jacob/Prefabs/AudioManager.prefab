@@ -47,9 +47,9 @@ MonoBehaviour:
   soundsArray:
   - name: FridgeOpen
     clip: {fileID: 8300000, guid: 80e853a16db530840ab121aa51d7740f, type: 3}
-    volume: 1
+    volume: 10
     pitch: 1
-    spatialBlend: 1
+    spatialBlend: 0
     loop: 0
     source: {fileID: 0}
   - name: FridgeClose
@@ -84,7 +84,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: b99d61369fc007b47803596a7e2005a6, type: 3}
     volume: 1
     pitch: 1
-    spatialBlend: 1
+    spatialBlend: 0
     loop: 1
     source: {fileID: 0}
   - name: WaterSplash
@@ -100,5 +100,26 @@ MonoBehaviour:
     pitch: 1
     spatialBlend: 1
     loop: 0
+    source: {fileID: 0}
+  - name: DrawrOpen
+    clip: {fileID: 8300000, guid: fa6f21766b9cca04aa9fa7c19f6032e1, type: 3}
+    volume: 10
+    pitch: 1
+    spatialBlend: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Theme
+    clip: {fileID: 8300000, guid: 421e157ad570c7b4c8ed3a8a433ffb0b, type: 3}
+    volume: 0.1
+    pitch: 1
+    spatialBlend: 0
+    loop: 1
+    source: {fileID: 0}
+  - name: PhoneCall
+    clip: {fileID: 8300000, guid: 421e157ad570c7b4c8ed3a8a433ffb0b, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 1
+    loop: 1
     source: {fileID: 0}
   voiceArray: []
