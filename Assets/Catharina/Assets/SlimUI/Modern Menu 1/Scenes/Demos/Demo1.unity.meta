@@ -1,5 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Catharina/Assets/SlimUI/Modern Menu 1/Scenes/Demos/Demo1.unity.meta
 guid: 829a86ba161cdd840842063447f41aab
+========
+guid: 6aa739ab8b8df28428b252bdff435bac
+folderAsset: yes
+>>>>>>>> Develop-Backup:Assets/Anton/Prefabs/Lamp Assets.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
