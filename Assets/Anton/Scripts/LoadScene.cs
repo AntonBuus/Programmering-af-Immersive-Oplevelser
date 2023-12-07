@@ -15,7 +15,7 @@ public class LoadScene : MonoBehaviour
     public void LoadKitchen()
     {
         Wait(5);
-       SceneManager.LoadScene("Kitchen"); 
+       SceneManager.LoadScene("Køkken"); 
     }
 
     private IEnumerator Wait(float delayInSeconds)
