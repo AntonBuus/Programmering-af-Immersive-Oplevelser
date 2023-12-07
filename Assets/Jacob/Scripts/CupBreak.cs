@@ -28,7 +28,7 @@ public class CupBreak : MonoBehaviour
             //collider.enabled = false;
             Destroy(gameObject);
             FindObjectOfType<AudioManager>().Play("Click");
-            Debug.Log("Balls");
+            //Debug.Log("Balls");
         }
     }
 }
