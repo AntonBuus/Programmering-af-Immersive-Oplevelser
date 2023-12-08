@@ -22,7 +22,7 @@ public class CupBreak : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.name == "Ball")
+        if(other.gameObject.name == "Ball(Clone)")
         {
             //mr.enabled = false;
             //collider.enabled = false;

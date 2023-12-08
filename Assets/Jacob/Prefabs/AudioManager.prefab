@@ -96,9 +96,9 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Click
     clip: {fileID: 8300000, guid: 2657be334cfa60e4a8aebeacebe83e1f, type: 3}
-    volume: 1
+    volume: 4.06
     pitch: 1
-    spatialBlend: 1
+    spatialBlend: 0.5
     loop: 0
     source: {fileID: 0}
   - name: DrawrOpen
@@ -110,7 +110,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Theme
     clip: {fileID: 8300000, guid: 421e157ad570c7b4c8ed3a8a433ffb0b, type: 3}
-    volume: 0.1
+    volume: 0.05
     pitch: 1
     spatialBlend: 0
     loop: 1
@@ -123,7 +123,15 @@ MonoBehaviour:
     loop: 1
     source: {fileID: 0}
   voiceArray:
-  - name: 
-    clip: {fileID: 0}
-    volume: 1
+  - name: Narrative
+    clip: {fileID: 8300000, guid: f573ecd23cdb27744b068c522f829bf4, type: 3}
+    volume: 3
+    source: {fileID: 0}
+  - name: Nr6
+    clip: {fileID: 8300000, guid: c91f62296e74a1148bbf1f7ea33bb4f2, type: 3}
+    volume: 3
+    source: {fileID: 0}
+  - name: Nr7
+    clip: {fileID: 8300000, guid: 80f32fd125e399d4ab549db9f91a7923, type: 3}
+    volume: 3
     source: {fileID: 0}

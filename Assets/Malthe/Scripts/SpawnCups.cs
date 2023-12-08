@@ -24,6 +24,7 @@ public class SpawnCups : MonoBehaviour
             Quaternion spawnRotation = spawnPositionReference.transform.rotation;
 
             Instantiate(prefabToSpawn, spawnPosition, spawnRotation);
+            FindObjectOfType<AudioManager>().Play("Click");
             CupsHaveSpawned = true;
         }
             else

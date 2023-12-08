@@ -13,6 +13,7 @@ public class SpawnBall : MonoBehaviour
         if (spawnPositionReference != null)
         {
             Vector3 spawnPosition = spawnPositionReference.transform.position;
+            FindObjectOfType<AudioManager>().Play("Click");
 
             Instantiate(prefabToSpawn, spawnPosition, Quaternion.identity);
             
