@@ -12121,6 +12121,18 @@ RectTransform:
   m_AnchoredPosition: {x: -9.459999, y: 78.940414}
   m_SizeDelta: {x: 60.559998, y: 24.120003}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &373932207 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1564823543310876251, guid: 14e991e21e600a040b06d3a141a08456,
+    type: 3}
+  m_PrefabInstance: {fileID: 1225146517}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62cb2da377ecda244b9a5ade02df6ab0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &374823819
 GameObject:
   m_ObjectHideFlags: 0
@@ -14419,8 +14431,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1564823543310876251, guid: 14e991e21e600a040b06d3a141a08456,
-          type: 3}
+      - m_Target: {fileID: 373932207}
         m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
         m_MethodName: DisableAudioSource
         m_Mode: 5
@@ -14459,8 +14470,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1564823543310876251, guid: 14e991e21e600a040b06d3a141a08456,
-          type: 3}
+      - m_Target: {fileID: 373932207}
         m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
         m_MethodName: Play
         m_Mode: 5
@@ -20203,7 +20213,12 @@ PrefabInstance:
     - target: {fileID: 8825804810701742155, guid: 05b6c4643f3c8de409ad6ae69bda3555,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 443.8
+      value: 306.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825804810701742155, guid: 05b6c4643f3c8de409ad6ae69bda3555,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 328.1
       objectReference: {fileID: 0}
     - target: {fileID: 8825804810701742155, guid: 05b6c4643f3c8de409ad6ae69bda3555,
         type: 3}
@@ -20213,7 +20228,12 @@ PrefabInstance:
     - target: {fileID: 8825804810701742155, guid: 05b6c4643f3c8de409ad6ae69bda3555,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 191.2
+      value: 260.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825804810701742155, guid: 05b6c4643f3c8de409ad6ae69bda3555,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -29.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -41034,8 +41054,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1564823543310876251, guid: 14e991e21e600a040b06d3a141a08456,
-          type: 3}
+      - m_Target: {fileID: 373932207}
         m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
         m_MethodName: Play
         m_Mode: 5
@@ -41047,8 +41066,7 @@ MonoBehaviour:
           m_StringArgument: BoilingWater
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1564823543310876251, guid: 14e991e21e600a040b06d3a141a08456,
-          type: 3}
+      - m_Target: {fileID: 373932207}
         m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
         m_MethodName: Play
         m_Mode: 5
@@ -41062,20 +41080,7 @@ MonoBehaviour:
         m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1564823543310876251, guid: 14e991e21e600a040b06d3a141a08456,
-          type: 3}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: DisableAudioSource
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: BoilingWater
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
@@ -41091,8 +41096,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1564823543310876251, guid: 14e991e21e600a040b06d3a141a08456,
-          type: 3}
+      - m_Target: {fileID: 373932207}
         m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
         m_MethodName: Play
         m_Mode: 5
@@ -41102,6 +41106,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Click
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 373932207}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: DisableAudioSource
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: BoilingWater
           m_BoolArgument: 0
         m_CallState: 2
   m_SelectExited:
@@ -44990,7 +45006,7 @@ PrefabInstance:
     - target: {fileID: 772846789306611978, guid: 4dbfccbc53fc17c43a868ef397d5f632,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2514814542379510109, guid: 4dbfccbc53fc17c43a868ef397d5f632,
         type: 3}
@@ -50681,7 +50697,7 @@ PrefabInstance:
     - target: {fileID: 3478561824413522045, guid: 7453ea9b340629b43bb1441603468159,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: 0.009
       objectReference: {fileID: 0}
     - target: {fileID: 3478561824413522045, guid: 7453ea9b340629b43bb1441603468159,
         type: 3}
@@ -50706,12 +50722,12 @@ PrefabInstance:
     - target: {fileID: 3478561824413522045, guid: 7453ea9b340629b43bb1441603468159,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.0027
+      value: -0.063
       objectReference: {fileID: 0}
     - target: {fileID: 3478561824413522045, guid: 7453ea9b340629b43bb1441603468159,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.1291
+      value: 0.145
       objectReference: {fileID: 0}
     - target: {fileID: 3478561824413522045, guid: 7453ea9b340629b43bb1441603468159,
         type: 3}
@@ -50837,8 +50853,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1564823543310876251, guid: 14e991e21e600a040b06d3a141a08456,
-        type: 3}
+      objectReference: {fileID: 373932207}
     - target: {fileID: 6327818771930643784, guid: 7453ea9b340629b43bb1441603468159,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -50943,8 +50958,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1564823543310876251, guid: 14e991e21e600a040b06d3a141a08456,
-        type: 3}
+      objectReference: {fileID: 373932207}
     - target: {fileID: 7014203150155043914, guid: 7453ea9b340629b43bb1441603468159,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
