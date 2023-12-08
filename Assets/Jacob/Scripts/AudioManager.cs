@@ -50,6 +50,7 @@ public class AudioManager : MonoBehaviour
     {
         Play("Theme");
         //Debug.Log("Start is working");
+        PlayVoice("Narrative");
     }
 
     //To call:
