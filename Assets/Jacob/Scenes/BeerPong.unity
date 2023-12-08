@@ -8998,6 +8998,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1564823543310876251, guid: 14e991e21e600a040b06d3a141a08456,
         type: 3}
+      propertyPath: voiceArray.Array.size
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1564823543310876251, guid: 14e991e21e600a040b06d3a141a08456,
+        type: 3}
       propertyPath: soundsArray.Array.size
       value: 11
       objectReference: {fileID: 0}
