@@ -122,4 +122,8 @@ MonoBehaviour:
     spatialBlend: 1
     loop: 1
     source: {fileID: 0}
-  voiceArray: []
+  voiceArray:
+  - name: 
+    clip: {fileID: 0}
+    volume: 1
+    source: {fileID: 0}
