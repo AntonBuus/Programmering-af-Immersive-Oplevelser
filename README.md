@@ -1,5 +1,5 @@
 # Programmering af Immersive Teknologier
-## This is the Github that contains the project for "Programmering af Immersive Teknologier" by group 9 
+## This is the Github that contains the project for "Programmering af Immersive Teknologier" called XR Future
 
 Members: Anton Buus Hansen, Catharina Riis-Jensen, Jacob Almdal Jensen og Malthe Kaare Hansen. 
 
