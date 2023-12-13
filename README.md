@@ -1,5 +1,5 @@
-# Programmering af Immersive Oplevelser
-## This is the Github that contains the project for "Programmering af Immersive Oplevelser" by group 9 
+# Programmering af Immersive Teknologier
+## This is the Github that contains the project for "Programmering af Immersive Teknologier" by group 9 
 
 Members: Anton Buus Hansen, Catharina Riis-Jensen, Jacob Almdal Jensen og Malthe Kaare Hansen. 
 
